@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Geumge Kim — Creative Architect · 영상 · 3D · 바이브코딩</title>
+<meta name="description" content="Geumge Kim 포트폴리오. AI 영상, Three.js 3D 인터랙션, 프리비즈·프로토타입, 바이브코딩 프로젝트.">
+<meta name="theme-color" content="#07070a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%23d4ff3a%22/%3E%3Ctext x=%2216%22 y=%2223%22 font-size=%2219%22 font-weight=%22900%22 text-anchor=%22middle%22 font-family=%22Arial%22%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css?v=20261124-2130">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Geumge 홈">GEUMGE<sup>®</sup></a>
+  <nav class="nav-links" aria-label="메인 메뉴">
+    <a href="#work" data-spy="work">전체 작업 <small class="c-all"></small></a><a href="#ads" data-spy="ads">광고 영상 <small class="c-ad"></small></a><a href="#stories" data-spy="stories">영상 스토리 <small class="c-story"></small></a><a href="#fashion" data-spy="fashion">패션 <small class="c-fashion"></small></a><a href="#vibe" data-spy="vibe">바이브코딩 <small class="c-vibe"></small></a><a href="#web" data-spy="web">웹페이지 <small class="c-web"></small></a><a href="#about" data-spy="about">About</a>
+  </nav>
+  <a class="nav-cta magnetic" href="#contact"><i class="pulse"></i>Let's talk</a>
+  <button class="nav-menu" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <a href="#chapters">챕터 보기 <small>07</small></a><a href="#work">전체 작업 <small class="c-all"></small></a><a href="#ads">광고 영상 <small class="c-ad"></small></a><a href="#stories">영상 스토리 <small class="c-story"></small></a><a href="#fashion">패션 <small class="c-fashion"></small></a><a href="#vibe">바이브코딩 <small class="c-vibe"></small></a><a href="#web">웹페이지 <small class="c-web"></small></a><a href="#about">About</a><a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" aria-label="소개">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+  <div class="hero-shapes" role="group" aria-label="배경 파티클 모양 바꾸기">
+    <span class="hero-shapes-label"><i class="pulse"></i>클릭해서 변형</span>
+    <button class="on" data-shape="0">Sphere</button><button data-shape="1">Knot</button><button data-shape="2">Wave</button><button data-shape="3">Galaxy</button>
+  </div>
+  <div class="hero-meta">
+    <span>Portfolio — <span class="year"></span></span>
+    <span>Film · 3D · Previz · Vibe Coding</span>
+  </div>
+  <h1 class="hero-title" aria-label="Creative Architect">
+    <span class="line l1" data-kinetic>CREATIVE</span>
+    <span class="line l2"><em>architect</em><span class="dot">.</span></span>
+  </h1>
+  <div class="hero-bottom">
+    <div class="hero-copy">
+      <p class="kr">감각으로 발견하고, 생각으로 설계하며,<br><b>기술로 구현합니다.</b></p>
+      <div class="hero-actions">
+        <a class="btn btn-lime magnetic" href="#chapters">챕터별로 보기 →</a>
+        <a class="btn btn-ghost magnetic" href="#work">전체 작업 검색</a>
+      </div>
+    </div>
+    <a class="hero-card" href="#about" aria-label="Geumge Kim 소개로 이동">
+      <img src="IMAGE/portrait-hero-clean-v4.png" alt="작업실 책상에 앉아 미소 짓는 Geumge Kim 캐릭터" width="1672" height="941">
+      <span class="hero-card-tag"><i class="pulse"></i>Open to collaboration</span>
+      <span class="hero-card-name">Geumge Kim<small>Design × AI · Creative Architect</small></span>
+    </a>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+</section>
+
+<div class="kw-band" role="presentation" aria-label="Film · Three.js · 3D Interaction · Previz · Prototype · Vibe Coding · AI Research"><div class="kw-glow" aria-hidden="true"></div><div class="kw-row"><span class="kw" data-t="AI FILM">AI FILM</span><i aria-hidden="true">✦</i><span class="kw" data-t="THREE.JS">THREE.JS</span><i aria-hidden="true">✦</i><span class="kw" data-t="3D INTERACTION">3D INTERACTION</span><i aria-hidden="true">✦</i><span class="kw" data-t="PREVIZ">PREVIZ</span><i aria-hidden="true">✦</i><span class="kw" data-t="PROTOTYPE">PROTOTYPE</span><i aria-hidden="true">✦</i><span class="kw" data-t="VIBE CODING">VIBE CODING</span><i aria-hidden="true">✦</i><span class="kw" data-t="AI RESEARCH">AI RESEARCH</span></div></div>
+
+
+<!-- CHAPTER DECK (JS로 생성 · JS가 없으면 아래 섹션이 순서대로 보입니다) -->
+<section class="deck" id="chapters" aria-label="챕터" hidden></section>
+
+<!-- WORK INDEX -->
+<section class="work section" id="work" aria-labelledby="work-title">
+  <div class="sec-head">
+    <span class="sec-num">00</span>
+    <h2 id="work-title" class="reveal">All <em>Work</em></h2>
+    <p class="sec-sub reveal">찾는 작업을 바로 고르세요.<br>카테고리·장르로 거르거나 제목·도구로 검색할 수 있어요.</p>
+  </div>
+  <div class="work-bar">
+    <div class="cat-tabs" role="tablist" aria-label="작업 카테고리"></div>
+    <label class="work-search"><span aria-hidden="true">⌕</span><input type="search" placeholder="제목, 장르, 도구 검색 (예: 광고, Three.js, 김홍도)" aria-label="작업 검색"><kbd>/</kbd></label>
+  </div>
+  <div class="sub-chips" role="group" aria-label="영상 장르" hidden></div>
+  <p class="work-count" aria-live="polite"></p>
+  <div class="work-grid"></div>
+  <p class="work-empty" hidden>검색 결과가 없어요. 다른 키워드나 <button class="work-reset">전체 보기</button></p>
+</section>
+
+<div class="chapter-panel" id="chapter-panel">
+<!-- ADS -->
+<section class="films section chapter" id="ads" data-ch="ad" aria-labelledby="ads-title">
+  <div class="sec-head">
+    <span class="sec-num">01</span>
+    <h2 id="ads-title" class="reveal">Brand <em>Films</em></h2>
+    <p class="sec-sub reveal">광고·브랜드 필름과 유튜브 쇼츠.<br>마우스를 올리면 미리보기, 클릭하면 본편이 재생됩니다.</p>
+  </div>
+  <article class="spotlight" data-featured="chicken,noad,nouveau" aria-live="polite">
+    <div class="spot-media">
+      <img class="spot-poster" alt="">
+      <video class="spot-video" muted loop playsinline preload="none" aria-hidden="true"></video>
+    </div>
+    <div class="spot-shade" aria-hidden="true"></div>
+    <div class="spot-info">
+      <span class="spot-badge"><i class="pulse"></i><span class="spot-genre"></span></span>
+      <h3 class="spot-title"></h3>
+      <p class="spot-hook"></p>
+      <div class="spot-row">
+        <button class="btn btn-lime magnetic spot-play"><span class="btn-icon">▶</span>지금 재생</button>
+        <span class="spot-meta"></span>
+      </div>
+    </div>
+    <div class="spot-dots" role="tablist" aria-label="추천 영상 선택"></div>
+  </article>
+
+  <div class="genre-chips" data-genres="ad,shorts" role="group" aria-label="장르로 이동"></div>
+  <div class="rows" data-genres="ad,shorts"></div>
+</section>
+
+<!-- STORIES -->
+<section class="films section chapter" id="stories" data-ch="story" aria-labelledby="stories-title">
+  <div class="sec-head">
+    <span class="sec-num">02</span>
+    <h2 id="stories-title" class="reveal">Story <em>Films</em></h2>
+    <p class="sec-sub reveal">역사·헤리티지, 스토리·애니메이션, 감성 숏필름.<br>오래 남는 이야기들을 모았습니다.</p>
+  </div>
+  <article class="spotlight" data-featured="danwon,tree,sea,spring" aria-live="polite">
+    <div class="spot-media">
+      <img class="spot-poster" alt="">
+      <video class="spot-video" muted loop playsinline preload="none" aria-hidden="true"></video>
+    </div>
+    <div class="spot-shade" aria-hidden="true"></div>
+    <div class="spot-info">
+      <span class="spot-badge"><i class="pulse"></i><span class="spot-genre"></span></span>
+      <h3 class="spot-title"></h3>
+      <p class="spot-hook"></p>
+      <div class="spot-row">
+        <button class="btn btn-lime magnetic spot-play"><span class="btn-icon">▶</span>지금 재생</button>
+        <span class="spot-meta"></span>
+      </div>
+    </div>
+    <div class="spot-dots" role="tablist" aria-label="추천 영상 선택"></div>
+  </article>
+
+  <div class="genre-chips" data-genres="history,story,drama" role="group" aria-label="장르로 이동"></div>
+  <div class="rows" data-genres="history,story,drama"></div>
+</section>
+
+<!-- FASHION -->
+<section class="fashion section chapter" id="fashion" data-ch="fashion" aria-labelledby="fashion-title">
+  <div class="sec-head">
+    <span class="sec-num">03</span>
+    <h2 id="fashion-title" class="reveal">Fashion <em>Space</em></h2>
+    <p class="sec-sub reveal">가상 공간과 패션을 잇는 쇼룸.<br>프리비즈로 구도와 동선을 먼저 설계합니다.</p>
+  </div>
+  <div class="fashion-grid"></div>
+  <div class="bento previz-bento fashion-previz">
+    <div class="tile tile-flow">
+      <span class="tile-label">Previz → Prototype</span>
+      <ol class="flow">
+        <li><b>01</b>아이디어</li><li><b>02</b>3D 프리비즈</li><li><b>03</b>AI 생성·편집</li><li><b>04</b>프로토타입</li>
+      </ol>
+      <p>영상과 공간을 만들기 전에 3D로 구도와 동선을 먼저 확인합니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VIBE CODING -->
+<section class="vibe section chapter" id="vibe" data-ch="vibe" aria-labelledby="vibe-title">
+  <div class="sec-head">
+    <span class="sec-num">04</span>
+    <h2 id="vibe-title" class="reveal">Vibe <em>Coded</em></h2>
+    <p class="sec-sub reveal">AI와 함께 만드는 앱과 실험.<br>Three.js 3D 인터랙션과 새로운 AI 기술 연구.</p>
+  </div>
+  <div class="bento code-bento" data-kind="vibe"></div>
+  <h3 class="sub-title">Three.js Lab · AI 리서치</h3>
+  <div class="bento lab-bento">
+    <div class="tile tile-live tile-teaser">
+      <div class="teaser-art" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="tile-top"><span class="tag tag-lime"><i class="pulse"></i>Live in hero</span><span class="tag">Three.js r170</span></div>
+      <div class="tile-bottom">
+        <h3>Particle Glass</h3>
+        <p>맨 위 첫 화면의 배경이 실시간 Three.js 실험입니다. 최대 1만 4천 개 파티클이 구·매듭·물결·은하로 모양을 바꾸고, 포인터를 대면 흩어집니다.</p>
+        <div class="shape-btns" role="group" aria-label="히어로 파티클 모양 선택 후 이동">
+          <button data-goto-shape="0">Sphere</button><button data-goto-shape="1">Knot</button><button data-goto-shape="2">Wave</button><button data-goto-shape="3">Galaxy</button>
+        </div>
+        <a class="btn btn-lime btn-sm magnetic teaser-go" href="#top">첫 화면에서 직접 체험하기 ↑</a>
+      </div>
+    </div>
+    <div class="tile tile-research">
+      <span class="tile-icon" aria-hidden="true">◎</span>
+      <h3>3D 인터랙션</h3>
+      <p>포인터·스크롤·터치에 반응하는 실시간 3D 장면을 웹에서 구현합니다.</p>
+      <ul class="pills"><li>Three.js</li><li>WebGL Shader</li><li>GSAP</li></ul>
+    </div>
+    <div class="tile tile-ai">
+      <span class="tile-icon" aria-hidden="true">✳</span>
+      <h3>새로운 AI 기술 연구</h3>
+      <p>이미지·영상·3D 생성 AI를 직접 써 보고 작업 흐름에 연결합니다.</p>
+      <ul class="pills"><li>ComfyUI</li><li>Tripo</li><li>Kling</li><li>Higgsfield</li><li>Seedance</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- WEB -->
+<section class="web section chapter" id="web" data-ch="web" aria-labelledby="web-title">
+  <div class="sec-head">
+    <span class="sec-num">05</span>
+    <h2 id="web-title" class="reveal">Web <em>Live</em></h2>
+    <p class="sec-sub reveal">지금 바로 접속해 볼 수 있는 웹페이지.<br>'라이브 보기'로 실제 사이트가 열립니다.</p>
+  </div>
+  <div class="bento code-bento" data-kind="web"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section chapter" data-ch="about" id="about" aria-labelledby="about-title">
+  <div class="sec-head">
+    <span class="sec-num">06</span>
+    <h2 id="about-title" class="reveal">Behind <em>the work</em></h2>
+  </div>
+  <div class="bento about-bento">
+    <div class="tile about-photo about-hp"><img src="img/geumge-hero-original.jpg" alt="작업실에서 미소 짓는 Geumge Kim" loading="lazy" width="1672" height="941"><div class="hp-copy typo"><p class="hp-h tl" style="--d:0">Creative Architect</p><p class="hp-ko"><span class="tl" style="--d:1">감각으로 발견하고,</span><span class="tl" style="--d:2">생각으로 설계하며,</span><span class="tl hp-acc" style="--d:3">기술로 구현하다.</span></p><p class="hp-desc tl" style="--d:4">디자인의 감각과 기획력, AI 기술로<br>사람과 기술을 연결하는 새로운 경험을 만듭니다.</p></div></div>
+    <div class="tile about-quiet"><img src="IMAGE/quiet-techwear-v5.png" alt="헤드셋을 쓴 캐릭터의 뒷모습과 아이보리 조형 공간" loading="lazy" width="1774" height="887"><div class="quiet-type typo"><p class="qt-en"><span class="tl" style="--d:0">Quiet Design.</span><span class="tl" style="--d:1"><em>Boundless<br>Imagination</em><i class="qt-dot" aria-hidden="true"></i></span></p></div><p class="qt-ko qt-base typo"><span class="tl" style="--d:2">디자인은 절제하고, 상상은 자유롭게.</span></p></div>
+    <div class="tile about-runway" data-play="runway" data-cursor="Play" role="button" tabindex="0" aria-label="3D 패션쇼 런웨이 영상 재생">
+      <video muted loop playsinline autoplay preload="metadata" poster="thumbs/runway.jpg" src="thumbs/runway-preview.mp4" aria-hidden="true"></video>
+      <span class="tag tag-glass ar-tag"><i class="pulse"></i>Runway — Fashion Space</span>
+      <div class="ar-info"><b>3D 패션쇼 런웨이</b><span>가상 공간과 패션을 잇는 런웨이 프리비즈</span></div>
+      <span class="ar-actions"><span class="ar-play">▶ 영상 보기</span><a class="ar-jump" href="#ch-fashion" data-cursor="Open">패션 챕터 →</a></span>
+    </div>
+    <div class="tile about-stats"><span class="st"><b data-count="12">12</b><span>편의 영상 작품</span></span><i class="st-sep" aria-hidden="true"></i><span class="st"><b data-count="4">4</b><span>개의 앱·웹 프로젝트</span></span><span class="st-note">AI 영상 · 3D 프리비즈 · 바이브코딩</span></div>
+    <div class="tile about-tools">
+      <span class="tile-label">Toolkit</span>
+      <div class="tool-groups"></div>
+      <div class="tool-chips" aria-label="사용 도구"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section chapter" data-ch="contact" id="contact" aria-labelledby="contact-title">
+  <p class="contact-kicker">새로운 아이디어, 흥미로운 협업</p>
+  <h2 id="contact-title" class="contact-title"><span>Let's make</span><span><em>something</em> matter.</span></h2>
+  <a class="contact-mail magnetic" href="mailto:seoinson076@gmail.com" data-cursor="Mail">seoinson076@gmail.com <span>↗</span></a>
+  <footer class="footer"><span>© <span class="year"></span> Geumge Kim</span><span>Quiet design. Boundless imagination.</span><a href="#top">Back to top ↑</a></footer>
+</section>
+</div>
+</main>
+
+<div class="sound-dock">
+  <button class="sound-toggle magnetic" aria-pressed="false" aria-label="배경 음악 켜기" data-cursor="Sound">
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+    <span class="sound-state">Sound <b>Off</b></span>
+  </button>
+  <span class="sound-hint" role="status" hidden>🎧 음악과 함께 보면 더 좋아요</span>
+</div>
+
+<dialog class="player" aria-label="영상 플레이어">
+  <div class="player-head"><div><span class="player-genre"></span><strong class="player-title"></strong></div><button class="player-close" aria-label="닫기">닫기 ✕</button></div>
+  <div class="player-stage"></div>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+<script src="data.js?v=20261124-2130"></script>
+<script src="main.js?v=20261124-2130"></script>
+<script src="music.js?v=20261124-2130"></script>
+<script type="module" src="three-scenes.js?v=20261124-2130"></script>
+<script type="module" src="runway.js?v=20261124-2130"></script>
+</body>
+</html>
